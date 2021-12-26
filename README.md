@@ -26,7 +26,7 @@ de la memoria del telefono, cargarla y mostrarla en un ImageView
 
 
 
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+/<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" //>
 
 
 // Para poder usar funciones obsoletas a partir de la version 29 de androir relacionadas con la conversion de
