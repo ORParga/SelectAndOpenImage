@@ -2,26 +2,33 @@
 Basic Android App for select an image and show it in a ImageView control
 
 
-//DESCRIPCION
-//Esta aplicacion enseña la forma más básica de seleccionar una foto
-//de la memoria del telefono, cargarla y mostrarla en un ImageView
-//
+DESCRIPCION
+Esta aplicacion enseña la forma más básica de seleccionar una foto
+de la memoria del telefono, cargarla y mostrarla en un ImageView
+
+
 //Para seleccionarla, se utiliza un INTENT.
 // Su funcionamiento es algo complejo por la optimizacion de Memoria de Android
-//
+
+
 // El proceso gira en torno al hecho de que la app podría ser destruida
 //  por android para ceder memoria al intent de seleccio de imagen
 // que la propia app solicita,
-//
+
+
 // En el metodo onCreate() se registra un objeto MyLifecycleObserver
 // que tupervisa el proceso
 // En OnResume() se comprueba se la app se ha iniciado desde cero o desde
 // el intent que la propia App ha invocado
-//
+
+
 // Para abrir el archivo, es necesario preparar el android manifest:
-//
-//              <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-//
+
+
+
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
 // Para poder usar funciones obsoletas a partir de la version 29 de androir relacionadas con la conversion de
 // rutas de archivo se ha de agregar esta linea al AndroidManifest
 //
